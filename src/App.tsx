@@ -19,7 +19,7 @@ export default function App() {
       <main>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/customer-portal" element={<Home />} />
           <Route path="/policy/:policyNumber" element={<Policy />} />
           <Route path="/policy" element={<Policies />} />
           <Route path="/settings" element={<Settings />} />

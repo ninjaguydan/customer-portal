@@ -20,7 +20,7 @@ export default function SiteHeader() {
         />
       )}
       <Link
-        to="/"
+        to="/customer-portal"
         className="pekin-logo"
         onClick={() => {
           setMenuIsOpen(false);

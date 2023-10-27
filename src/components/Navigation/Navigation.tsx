@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Navigation = () => {
   return (
     <nav className={`site-nav DESKTOP`}>
-      <NavLink tabIndex={0} to="/">
+      <NavLink to="/customer-portal">
         <span className="material-symbols-outlined" aria-hidden="true">
           home
         </span>

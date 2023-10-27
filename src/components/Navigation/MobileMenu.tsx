@@ -8,7 +8,7 @@ type Props = {
 const Navigation = ({ className, closeMenu }: Props) => {
   return createPortal(
     <nav className={`site-nav ${className}`}>
-      <NavLink to="/" onClick={closeMenu}>
+      <NavLink to="/customer-portal" onClick={closeMenu}>
         <span className="material-symbols-outlined" aria-hidden="true">
           home
         </span>
