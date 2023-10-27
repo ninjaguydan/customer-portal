@@ -1,0 +1,72 @@
+.card.policy-card {
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.card .success {
+  color: var(--chrolophyllis-dark);
+}
+.card .false {
+  color: var(--error);
+}
+.card .autopay.MOBILE {
+  font-size: 0.875rem;
+  position: absolute;
+  right: 0.75rem;
+  top: 0.75rem;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.card-content hr {
+  margin: 0.5rem 0;
+  border: 0;
+  border-top: 1px solid var(--chill-wave);
+}
+.amount-due {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: 0.5rem 0;
+}
+.amount-due .amount {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.amount-due p:not(.amount) {
+  color: var(--shade-4);
+  font-size: 14px;
+}
+.amount-due .material-symbols-outlined {
+  color: var(--chrolophyllis-dark);
+  font-size: 3.5rem;
+}
+.amount-due .material-symbols-outlined + p {
+  color: var(--secondary-hover);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.card.policy-card .btn-group {
+  justify-content: center;
+}
+.card.policy-card .btn-group * {
+  width: 100%;
+}
+
+@media only screen and (min-width: 490px) {
+  .card.policy-card {
+    grid-column: span 12 / span 12;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .card.policy-card {
+    grid-column: span 6 / span 6;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .card.policy-card {
+    grid-column: span 4 / span 4;
+  }
+}

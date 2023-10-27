@@ -1,0 +1,87 @@
+.btn.back {
+  display: none;
+  color: var(--varuca);
+  position: absolute;
+  right: calc(2rem - 0.75rem);
+  top: 4rem;
+}
+.btn.back .chevron {
+  padding: 0.125rem;
+}
+.btn.back .chevron span {
+  font-size: 1rem;
+}
+.policy-summary.coverages .card-subheader,
+.policy-summary.coverages p,
+.insured-info p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.policy-documents .card {
+  padding: 0;
+  flex-direction: column;
+  overflow: hidden;
+  height: calc(100% - 2rem);
+}
+.policy-documents .card .tiles {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding: 1rem;
+}
+.policy-documents .card .btn-group {
+  justify-content: flex-end;
+  background-color: var(--shade-8);
+  padding: 1rem;
+}
+.policy-documents .card .btn.icon {
+  color: var(--summer-break-dark);
+}
+.policy-documents .checkbox-tile {
+  background-color: var(--background-green);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.policy-documents .checkbox-tile span {
+  margin-left: auto;
+}
+.insured-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media only screen and (min-width: 700px) {
+  .btn.back {
+    display: inherit;
+  }
+  .policy-summary,
+  .policy-documents,
+  .coverages,
+  .service {
+    grid-column: span 6 / span 6;
+  }
+  .insured-info {
+    grid-column: span 12 / span 12;
+  }
+  .insured-group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .insured-group p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .policy-summary,
+  .policy-documents,
+  .service {
+    /* grid-column: span 4 / span 4; */
+  }
+}

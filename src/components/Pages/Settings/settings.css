@@ -1,0 +1,31 @@
+.settings article {
+  grid-column: span 6 / span 6;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.read-only-input {
+  border-bottom: 1px solid var(--chill-wave);
+  padding: 0.5rem;
+  width: 100%;
+}
+.card .form-group input {
+  border: unset;
+  border-radius: 0;
+  border-bottom: 1px solid var(--chill-wave);
+}
+.btn.icon.primary {
+  border-radius: 50%;
+}
+.edit-btn-group {
+  display: flex;
+  column-gap: 0.25rem;
+  justify-content: space-between;
+}
+.toggle-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

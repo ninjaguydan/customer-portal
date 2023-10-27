@@ -1,0 +1,57 @@
+/*------------------------------
+Menu Button Styles
+------------------------------*/
+.menu-btn {
+  all: unset;
+  background-color: unset;
+  border: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.menu-btn:focus {
+  box-shadow: 0 0 4px var(--chill-wave-dark);
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.menu-btn_burger {
+  width: 1.5rem;
+  height: 2px;
+  background: var(--shade-2);
+  transition: all 0.1s ease-in-out;
+  border-radius: 0.5rem;
+}
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 2px;
+  background: var(--shade-2);
+  transition: all 0.1s ease-in-out;
+  border-radius: 0.5rem;
+}
+.menu-btn_burger::before {
+  transform: translateY(-0.5rem);
+  transform-origin: left, top;
+}
+.menu-btn_burger::after {
+  transform: translateY(0.5rem);
+  transform-origin: left, bottom;
+  width: 1.25rem;
+}
+.menu-btn.open .menu-btn_burger {
+  background: transparent;
+}
+.menu-btn.open .menu-btn_burger::before {
+  background-color: var(--shade-2);
+  transform: rotate(45deg);
+}
+.menu-btn.open .menu-btn_burger::after {
+  background-color: var(--shade-2);
+  transform: rotate(-45deg);
+  width: 1.5rem;
+}

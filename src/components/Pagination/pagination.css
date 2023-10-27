@@ -1,0 +1,18 @@
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.pagination .page {
+  font-weight: 600;
+  color: var(--chill-wave);
+}
+@media only screen and (min-width: 490px) {
+  .pagination {
+    justify-content: flex-end;
+  }
+}

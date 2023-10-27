@@ -1,0 +1,55 @@
+.greeting-home {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+  background-color: unset;
+}
+.quick-tools .btn span {
+  position: relative;
+  font-size: 1rem;
+}
+.quick-tools .btn span.badge {
+  top: -2px;
+}
+.card.notifications .title {
+  color: var(--chill-wave-dark);
+}
+.card.notifications .info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.card.notifications .info span {
+  display: none;
+  font-size: 2rem;
+  color: var(--chill-wave);
+  margin-left: 1rem;
+}
+.card.notifications p:not(.title) {
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 490px) {
+  .quick-tools h2 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .greeting-home {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1.5rem;
+  }
+  .greeting-home h1 {
+    padding: 0;
+  }
+  .card.notifications {
+    border-left: 0.5rem solid var(--chill-wave);
+  }
+  .card.notifications .info span {
+    display: inline;
+  }
+}
