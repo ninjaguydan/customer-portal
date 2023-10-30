@@ -49,6 +49,13 @@
   .card.notifications {
     border-left: 0.5rem solid var(--chill-wave);
   }
+  .card.notifications .info p {
+    font-size: 1rem;
+  }
+  .card.notifications .info p.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
   .card.notifications .info span {
     display: inline;
   }
