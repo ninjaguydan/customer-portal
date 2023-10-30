@@ -49,7 +49,7 @@ nav.site-nav a.active span.material-symbols-outlined {
 @media only screen and (min-width: 700px) {
   nav.site-nav.DESKTOP {
     display: flex !important;
-    position: absolute;
+    position: static;
     height: 6rem;
     flex-direction: row;
     width: unset;
