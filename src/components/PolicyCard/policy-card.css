@@ -3,6 +3,7 @@
   row-gap: 1rem;
   width: 100%;
   margin: 0 auto;
+  justify-content: unset;
 }
 .card .success {
   color: var(--chrolophyllis-dark);
@@ -50,6 +51,7 @@
 }
 .card.policy-card .btn-group {
   justify-content: center;
+  margin-top: auto;
 }
 .card.policy-card .btn-group * {
   width: 100%;
