@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/customer-portal/static/css/main.f69627ad.css",
+    "main.css": "/customer-portal/static/css/main.259bc82e.css",
     "main.js": "/customer-portal/static/js/main.ec6dee02.js",
     "static/media/pekin-logo.svg": "/customer-portal/static/media/pekin-logo.c868fe5064831ee280626204899681e9.svg",
     "index.html": "/customer-portal/index.html",
-    "main.f69627ad.css.map": "/customer-portal/static/css/main.f69627ad.css.map",
+    "main.259bc82e.css.map": "/customer-portal/static/css/main.259bc82e.css.map",
     "main.ec6dee02.js.map": "/customer-portal/static/js/main.ec6dee02.js.map"
   },
   "entrypoints": [
-    "static/css/main.f69627ad.css",
+    "static/css/main.259bc82e.css",
     "static/js/main.ec6dee02.js"
   ]
 }
